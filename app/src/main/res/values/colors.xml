@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F6BC24</color>
+    <color name="colorPrimaryDark">#F6BC24</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="BlueViolet">#8A2BE2</color>
+    <color name="DarkMagenta">#8B008B</color>
+    <color name="DarkOrchid">#9932CC</color>
+    <color name="DarkPurple">#ff663366</color>
+    <color name="Beer">#e68a00</color>
+    <color name="Grey">#A5A19A</color>
+    <color name="Title">#F6BC24</color>
+    <color name="HitamEnak">#333333</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOrange">#F6BC24</color>
+    <color name="colorLightOrange">#FADA84</color>
+    <color name="colorGray">#E3E3E3</color>
+
+
+    <!--Text Color-->
+    <color name="colorTextStatusMenuggu">#929394</color>
+    <color name="colorTextStatusDiproses">#D28624</color>
+    <color name="colorTextStatusBerhasil">#19B71D</color>
+    <color name="colorTextStatusDibatalkan">#C34444</color>
+
+</resources>

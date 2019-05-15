@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--menu more-->
+    <item
+            android:id="@+id/menu_tentang_kami"
+            android:title="Tentang kami"/>
+    <item
+            android:id="@+id/menu_tanya_jawab"
+            android:title="@string/tanya_jawab"/>
+    <item
+            android:id="@+id/menu_syarat_dan_ketentuan"
+            android:title="@string/syarat_dan_ketentuan"/>
+    <item
+            android:id="@+id/menu_kontak_kami"
+            android:title="@string/kontak_kami"/>
+
+    <item
+            android:id="@+id/menu_ulas_kami"
+            android:title="@string/ulas_kami"/>
+</menu>

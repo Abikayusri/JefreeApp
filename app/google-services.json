@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279682001819",
+    "firebase_url": "https://jelantahfree-a383f.firebaseio.com",
+    "project_id": "jelantahfree-a383f",
+    "storage_bucket": "jelantahfree-a383f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279682001819:android:289a216287b6decd",
+        "android_client_info": {
+          "package_name": "com.jefree.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279682001819-tc1dta644ovhe7mhraremb66v97mai15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5goqwr_2gRkgXb0ukzxf8vIH0p6iJTsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279682001819-tc1dta644ovhe7mhraremb66v97mai15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

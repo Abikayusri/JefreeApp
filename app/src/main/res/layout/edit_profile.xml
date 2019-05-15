@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/ic_topbanner3"
+                android:orientation="vertical"/>
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:theme="@style/ToolbarThemeWhite"
+                app:titleTextColor="@android:color/white"
+                />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
+                android:layout_width="144dp"
+                android:layout_height="150dp"
+                android:focusable="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                app:civ_border_color="@android:color/holo_orange_light"
+                app:civ_border_width="2dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/image_profile"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                <Spinner
+                        android:id="@+id/sp_edit_profile_title"
+                        android:background="@drawable/rounded_spinner_title"
+                        android:layout_marginTop="1dp"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:scrollbarSize="700dp"
+                        android:spinnerMode="dropdown"
+                        android:dropDownVerticalOffset="50dp"/>
+
+                <EditText
+                        android:id="@+id/et_edit_profile_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_linear_layout_border_gray"
+                        android:hint="@string/nama_lengkap"
+                        android:padding="10dp"
+                        android:textSize="16sp"/>
+            </LinearLayout>
+
+
+            <EditText
+                    android:id="@+id/et_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:background="@drawable/rounded_linear_layout_border_gray"
+                    android:hint="@string/deskripsi"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:paddingBottom="20sp"
+                    android:textSize="16sp"/>
+
+            <Spinner
+                    android:id="@+id/sp_edit_profile_jenis_usaha"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_spinner_business"
+                    android:dropDownVerticalOffset="50dp"
+                    android:scrollbarSize="700sp"
+                    android:spinnerMode="dropdown"/>
+
+
+            <EditText
+                    android:id="@+id/et_edit_profile_nomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_linear_layout_border_gray"
+                    android:hint="@string/label_no_handphone"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:paddingBottom="20sp"
+                    android:textSize="16sp"/>
+
+            <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_linear_layout_border_gray"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:paddingBottom="20sp"
+                    android:textSize="16sp"/>
+
+            <EditText
+                    android:id="@+id/et_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_linear_layout_border_gray"
+                    android:hint="@string/alamat"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:paddingBottom="20sp"
+                    android:textSize="16sp"/>
+
+            <Button
+                    android:id="@+id/btn_simpan_profile"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/rounded_button_style"
+                    android:text="@string/simpan"
+                    android:textSize="18dp"
+                    android:textColor="#ffff"/>
+        </LinearLayout>
+        <ProgressBar
+                android:id="@+id/progressBar_profile"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>

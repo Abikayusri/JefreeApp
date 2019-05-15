@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.aboutUs.list_more.GeneralActivity">
+
+    <include layout="@layout/appbar"/>
+
+    <!--layout content dinamis layout_content_dinamis-->
+    <LinearLayout
+            android:id="@+id/layout_content_dinamis"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/sample_item"
+                  android:id="@+id/content"
+                  android:textColor="@color/colorBlack"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                  android:padding="@dimen/padding_20"/>
+    </LinearLayout>
+    <!-- end layout content dinamis-->
+
+    <!--kontak layout_content_kontak-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="20dp"
+                  android:layout_marginBottom="10dp"
+                  android:visibility="gone"
+                  android:orientation="vertical"
+                  android:id="@+id/layout_content_kontak">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorBlack"
+                      android:textSize="14dp"
+                      android:text="Hubungi Hotline kami"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:orientation="vertical">
+
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorBlack"
+                          android:textStyle="bold"
+                          android:text="Email"/>
+
+                <TextView android:layout_width="match_parent"
+                          android:id="@+id/email_us"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorBlack"
+                          android:text="customerservice@gmail.com"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:layout_gravity="center"
+
+                          android:orientation="vertical">
+                <ImageView android:id="@+id/img_1"
+                           android:src="@drawable/ic_email_black"
+                           android:layout_width="30dp"
+                           android:adjustViewBounds="true"
+
+                           android:layout_height="30dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorBlack"
+                          android:textStyle="bold"
+                          android:text="No. Handphone"/>
+
+                <TextView android:layout_width="match_parent"
+                          android:id="@+id/contact_us"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorBlack"
+                          android:text="082250097924"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_centerVertical="true"
+                          android:layout_alignParentRight="true"
+                          android:orientation="vertical">
+
+                <ImageView android:id="@+id/img_2"
+                           android:src="@drawable/ic_local_phone_black"
+                           android:layout_width="30dp"
+                           android:adjustViewBounds="true"
+                           android:layout_height="30dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!-- end kontak-->
+
+    <!--RC list card card_view_list-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:visibility="gone"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="30dp"
+                  android:id="@+id/card_view_list">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_view"
+                tools:listitem="@layout/list_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <!-- end list card-->
+
+</LinearLayout>

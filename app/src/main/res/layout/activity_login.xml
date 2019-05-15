@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bg_header"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      tools:context=".ui.login.Login">
+
+            <android.support.v7.widget.Toolbar
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/toolbarLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Title"
+                    android:minHeight="?attr/actionBarSize"
+                    app:theme="@style/ToolbarThemeBlack"
+                    app:titleTextColor="@color/HitamEnak"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="172dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="48dp"
+                        android:src="@drawable/ic_jefree"/>
+
+
+                <EditText
+                        android:id="@+id/et_login_no_handphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/rounded_edit_text_style"
+                        android:hint="@string/label_no_handphone"
+                        android:inputType="phone"
+                        android:textSize="14sp"/>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp">
+
+                    <EditText
+                            android:id="@+id/et_login_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_edit_text_style"
+                            android:hint="@string/label_password"
+                            android:inputType="textPassword"
+                            android:textSize="14sp"/>
+
+                    <ImageView
+                            android:id="@+id/toggle_show_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_show_password"/>
+                </RelativeLayout>
+
+
+                <Button
+                        android:id="@+id/btn_log_login"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/rounded_button_style"
+                        android:text="@string/label_login"
+                        android:textColor="#ffff"
+                        android:textSize="18sp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Belum Punya akun?"/>
+
+                    <TextView
+                            android:id="@+id/tv_login_daftar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="onClick"
+                            android:paddingLeft="5dp"
+                            android:text="Daftar Disini"
+                            android:textColor="#e68a00"
+                            android:textStyle="bold"
+                            tools:ignore="OnClick"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar
+                android:id="@+id/progressBar_login"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>

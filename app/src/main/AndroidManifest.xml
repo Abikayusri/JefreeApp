@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.jefree.app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+            android:name="com.jefree.app.JefreeApp"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name="com.jefree.app.ui.aboutUs.list_more.GdetailActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoToolbar"
+        />
+
+        <activity
+                android:name="com.jefree.app.ui.aboutUs.list_more.GeneralActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoToolbar"/>
+        <activity
+                android:name="com.jefree.app.ui.splash.Splash"
+                android:screenOrientation="portrait"
+                android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jefree.app.ui.riwayatPenjualan.RiwayatPenjualan">
+        </activity>
+        <activity
+                android:name="com.jefree.app.ui.sliderIntro.SliderActivity"
+                android:theme="@style/WhiteStatusBar"/>
+        <activity
+                android:name="com.jefree.app.ui.login.Login"
+                android:theme="@style/AppTheme.NoToolbar"
+                android:windowSoftInputMode="stateHidden"/>
+        <activity
+                android:name="com.jefree.app.ui.register.Register"
+                android:theme="@style/WhiteToolbar"
+                android:windowSoftInputMode="stateHidden"/>
+        <activity
+                android:name="com.jefree.app.ui.home.activity.Home"
+                android:theme="@style/AppTheme.NoToolbar"/>
+        <activity android:name="com.jefree.app.ui.help.Help"/>
+        <activity android:name="com.jefree.app.ui.aboutUs.AboutUS"/>
+        <activity
+                android:name="com.jefree.app.ui.home.activity.LihatProfilPenggunaLain"
+                android:theme="@style/WhiteToolbar"/>
+        <activity
+                android:name="com.jefree.app.ui.home.activity.EditProfile"
+                android:theme="@style/AppTheme.NoToolbar"
+                android:windowSoftInputMode="stateHidden"/>
+        <activity
+                android:name="com.jefree.app.ui.jual.Jual"
+                android:theme="@style/WhiteToolbar"/>
+        <activity
+                android:name="com.jefree.app.ui.konfirmasipenjualan.KonfirmasiPenjualan"
+                android:theme="@style/WhiteToolbar"/>
+    </application>
+
+</manifest>

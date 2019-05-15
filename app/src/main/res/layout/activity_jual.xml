@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.jual.Jual">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!--    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#E3E3E3"
+            app:layout_constraintTop_toBottomOf="@+id/barlayout" />-->
+    <TextView
+        android:id="@+id/tvJualName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_text_view_style"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barlayout" />
+
+    <TextView
+        android:id="@+id/tvJualPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_text_view_style"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvJualName"
+        app:layout_constraintStart_toStartOf="@+id/tvJualName"
+        app:layout_constraintTop_toBottomOf="@+id/tvJualName" />
+
+    <RelativeLayout
+        android:id="@+id/rvAlamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvJualPhone"
+        app:layout_constraintStart_toStartOf="@+id/tvJualPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tvJualPhone">
+        <TextView
+            android:id="@+id/tvJualAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_text_view_style"
+            android:minLines="3"
+            android:text="@string/edit_alamat_pada_profil_kamu_untuk_menambahkan_alamat"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/ic_pencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/etMinyak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edit_text_style"
+        android:hint="Masukkan jumlah minyak (Kg)"
+        android:inputType="number"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/rvAlamat"
+        app:layout_constraintStart_toStartOf="@+id/rvAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/rvAlamat" />
+
+    <Button
+        android:id="@+id/btnJualLanjut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_button_style"
+        android:text="Lanjut"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMinyak" />
+</android.support.constraint.ConstraintLayout>

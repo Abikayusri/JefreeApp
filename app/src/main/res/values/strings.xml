@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Jefree</string>
+
+    <!--more mmenu home-->
+    <string name="tentang_kami">Tentang kami</string>
+    <string name="tanya_jawab">Tanya jawab</string>
+    <string name="syarat_dan_ketentuan">Syarat dan ketentuan</string>
+    <string name="kontak_kami">Kontak kami</string>
+    <string name="ulas_kami">Ulas kami</string>
+    <!-- end more mmenu home-->
+
+
+    <!--tentang kami-->
+    <string name="tentang_kami_desc">JEFREE merupakan platform yang memungkinkan masyarakat untuk menyalurkan minyak
+        jelantah dengan praktis. Disini JEFREE memiliki visi untuk menciptakan Indonesia yang bebas limbah minyak
+        Jelantah.
+        <br/>
+        Ingin tahu lebih lanjut?
+        <br/>
+        jefree.quthubm.com
+    </string>
+    <!-- end tentang kami-->
+
+
+    <!--tanya jawab titles-->
+    <string-array name="tanya_jawab_titles">
+        <item>Apa Itu JEFREE?</item>
+        <item>Kemana minyak jelantah disalurkan?</item>
+        <item>Bagaimana minyak jelantah disalurkan?</item>
+        <item>Apa kriteria minyak jelantah yang saya bisa salurkan?</item>
+        <item>Barapa minimal minyak jelantah yang bisa saya salurkan?</item>
+        <item>Dimana saya bisa menampung minyak jelantah saya?</item>
+        <item>Bagaimana saya mendapatkan uang hasil penjualan?</item>
+    </string-array>
+    <!--end tanya jawab titles-->
+
+
+    <!--tanya jawab content-->
+    <string-array name="tanya_jawab_content">
+        <item>Jefre adalah sebuah aplikasi yang memungkinkan masyarakat untuk menyalurkan minyak jelantah dengan mudah
+            dan praktis. JEFREE membantu masyarakat untuk membuang minyak jelantah dengan benar.
+        </item>
+        <item>Minyak jelantah akan disalurkan oleh JEFREE kepada para pengolah resmi. Disini pengolah akan mendaur ulang
+            minyak jelantah yang ada menjadi produk yang bermanfaat seperti biodiesel.
+        </item>
+        <item>Setelah Install Aplikasi dan mendaftar menjadi member, anda dapat mengisi “form jual” untuk mengisi
+            informasi terkait berat minyak jelantah dan lokasi anda. Setelah itu akan ada kurir JEFREE yang akan
+            menjemput minyak jelantah langsung ke lokasi anda.
+        </item>
+        <item>Minyak jelantah yang anda salurkan dapat berupa minyak bekas gorengan apa saja, selama tidak tercemar atau
+            tercampur bahan cair/kimia lain. Contoh : tercampur bensin, minyak tanah, atau air.
+        </item>
+        <item>Dalam satu kali penjemputan, berat minimal minyak jelantah adalah 1 Kg dan maksimal 50 Kg.
+        </item>
+        <item>Anda dapat menampung minyak jelantah anda dimana saja. Pada saat penjemputan, minyak jelantah akan
+            dipindahkan ke wadah yang kurir bawa.
+        </item>
+        <item>Setelah anda menyelesaikan form penjualan, kurir akan menjemput minyak jelantah anda dan melakukan proses
+            pengecekan berat minyak jelantah. Setelah proses pengecekan dan perhitungan ulang, kurir akan memberikan
+            uang secara tunai sesuai jumlah yang dihitung.
+        </item>
+    </string-array>
+
+
+    <!--syarat dan ketentuan  titles-->
+    <string-array name="syarat_dan_ketentuan_title">
+        <item>Ketentuan Pengguna</item>
+        <item>Syarat dan Ketentuan</item>
+        <item>kebijakan Privasi</item>
+    </string-array>
+    <!-- end syarat dan ketentuan  titles-->
+
+    <!--syarat dan ketentuan  url-->
+    <string-array name="syarat_dan_ketentuan_url">
+        <item>ketentuan_pengguna</item>
+        <item>syarat_dan_ketentuan</item>
+        <item>Kebijakan_Privasi</item>
+
+    </string-array>
+    <!-- end syarat dan ketentuan  titles-->
+
+    <string name="sample_item">Sample Item</string>
+
+
+    <string name="bantuan">Bantuan</string>
+    <string name="home">Home</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="profile">Profile</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="label_password">Kata sandi</string>
+    <string name="label_password_register">Kata sandi (minimal 6 karekter)</string>
+    <string name="label_no_handphone">Nomor Handphone</string>
+    <string name="label_login">Masuk</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="iklan_oilink">Buat akun di Jefree, supaya minyak jelantah kamu lebih bermanfaat, dan jadilah pahlawan
+        lingkungan.
+    </string>
+    <string name="username_required">Tolong isi kolom ini!</string>
+
+    <!--Title-->
+    <string-array name="title_name">
+        <item>Tuan</item>
+        <item>Nyonya</item>
+        <item>Mas</item>
+        <item>Mba</item>
+    </string-array>
+
+    <string-array name="jenis_usaha">
+        <item>Rumah Tangga</item>
+        <item>UMKM</item>
+        <item>Waarung/ Ruah Makan</item>
+
+    </string-array>
+
+
+    <string name="telah_berha">
+        Telah berhasil menyelamatkan lingkungan dengan mengumpulkan minyak jelantah sebanyak 3 kg.
+    </string>
+
+    <string name="mbak_wulan">
+        Mbak Wulan
+    </string>
+    <string name="daftar">Daftar</string>
+    <string name="email">Email</string>
+    <string name="alamat">Alamat</string>
+    <string name="deskripsi">Tuliskan sesuatu yang mendeskripsikan tentang anda, maksimal 140 karakter</string>
+    <string name="simpan">Simpan</string>
+    <string name="quotes">“Setiap orang menjadi ciptaan lingkungan mereka” \n Steven Redhead</string>
+    <string name="strip">-</string>
+    <string name="password_confirmation">Ulangi kata sandi</string>
+    <string name="edit_alamat_pada_profil_kamu_untuk_menambahkan_alamat">Edit alamat pada profil kamu untuk menambahkan alamat.</string>
+
+
+</resources>
+
+
